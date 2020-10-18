@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+      <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  
+     <header>
+         <div class="flex">
+          <a id="logo"><h1>CodePlayer</h1></a>
+             <img src="https://simpleicon.com/wp-content/uploads/play1.svg" width="50" height="50">     
+        </div>
+      <div class="buttoncontainer">
+        
+          <a class="togglebutton active" id="html">HTML</a>
+          <a class="togglebutton" id="css">CSS</a>
+          <a class="togglebutton" id="js">Javascript</a>
+          <a class="togglebutton active" id="output">Output</a>
+          
+          </div>
+         
+      </header>
+   
+<div class="titles">
+      <h3 class="ui-widget-header">HTML</h3>
+            <h3 class="ui-widget-header">CSS</h3>
+            <h3 class="ui-widget-header">JS</h3>
+      </div>
+      <div id="bodyContainer">
+            
+          <textarea id="htmlPanel" class="panel active"><p id="demo">Sarvesh</p> 
+          </textarea>
+          <textarea id="cssPanel" class="panel">p {
+color: red;
+}
+          
+          </textarea>
+          <textarea id="jsPanel" class="panel">//Write You javascript here
+document.getElementById('demo').textContent = 'Hi There';     
+          
+          </textarea > 
+          
+      </div>
+      <h3 class="ui-widget-header outputtitle">Output  <a id="run"><img src="https://simpleicon.com/wp-content/uploads/play1.svg" width="50" height="50"></a></h3>
+      <iframe id="outputPanel" class="active"></iframe>
+      
+
+      
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+  </body>
+</html>
+  

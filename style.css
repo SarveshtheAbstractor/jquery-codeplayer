@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+    header,.buttoncontainer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttoncontainer{
+    justify-content: center;
+}
+
+.buttoncontainer a{
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+#run{
+    cursor: pointer;
+}
+.buttoncontainer a:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.buttoncontainer a:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.buttoncontainer a:hover{
+    background-color: lavender;
+}
+
+.buttoncontainer a:nth-child(2),
+.buttoncontainer a:nth-child(3){
+    border-left: none;
+}
+
+.buttoncontainer a:nth-child(3){
+    border-right: none;
+}
+
+.active{
+    background-color: #E8F2FF;
+}
+textarea{
+    resize: none;
+    padding: 5px 10px;
+}
+
+textarea:focus{
+    outline: none;
+}
+iframe{
+    width: 100%;
+}
+#bodyContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.titles h3{
+    width: 33.33%;
+}
+textarea{
+    width: 33.33%;
+}
+.outputtitle{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    header,.buttoncontainer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    #logo{
+        padding-left: 15px;
+    
+    }
+    .buttoncontainer a{
+        border: none;
+    }
+    #bodyContainer{
+        flex-direction: column;
+    }
+    #bodyContainer textarea{
+        width: 100%;
+       
+    }
+}
